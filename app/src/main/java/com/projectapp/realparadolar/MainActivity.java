@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.calcular){
-            String value = this.viewHolder.paraCalcular.getText().toString();
+            String value = this.viewHolder.paraCalcular
+                    .getText().toString();
             if("".equals(value)){
-                Toast.makeText(this, "informe um valor", Toast.LENGTH_LONG).show();
+                Toast.makeText(this,
+                        "informe um valor", Toast.LENGTH_LONG).show();
             }else{
                 calcularBinario();
             }
@@ -47,15 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void calcularBinario(){
-        int value = Integer.parseInt(String.valueOf(viewHolder.paraCalcular));
+        int value = Integer.parseInt(String.valueOf
+                (viewHolder.paraCalcular));
         Integer decimal = Integer.valueOf(value);
         int[] m = new int[10];
         int x = 0;
         while (decimal>1){
             m[x] = decimal % 2;
-
             decimal = decimal/2;
-
             x++;
         }
 
