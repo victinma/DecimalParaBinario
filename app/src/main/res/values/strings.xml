@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RealParaDolar</string>
+    <string name="app_name">Decimal Para Binario</string>
     <string name="valorDecimal">Digite o valor em decimal</string>
     <string name="valorBinário">O valor em binário é: </string>
 </resources>
